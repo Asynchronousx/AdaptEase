@@ -249,4 +249,4 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ## Contact
 
-For questions, support, or collaboration opportunities, please open an issue on GitHub or reach out to us directly via [your-email@example.com]. We look forward to hearing from you!
+For questions, support, or collaboration opportunities, please open an issue on GitHub. We look forward to hearing from you!
