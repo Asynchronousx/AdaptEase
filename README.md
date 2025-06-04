@@ -115,7 +115,7 @@ The widget handles its own HTML and CSS injection, requiring minimal setup on yo
     The key to AdaptEase's adaptability is the `data-adaptease-text-class` attribute within the script tag. You **only** need to change the value of this attribute to the CSS selector that precisely targets the text elements you want AdaptEase to work with.
 
     *   **Example:** If your main article content is wrapped in a `<div id="article-body">` and paragraphs are within it, you might use `data-adaptease-text-class="#article-body p"`.
-    *   **Your current configuration:** As seen in `index_focus.html`, it's set to `data-adaptease-text-class=".foc-module-text p"`, which targets all `<p>` tags located within elements that have the class `foc-module-text`.
+    *   **Current configuration:** As seen in the example there, it's set to `data-adaptease-text-class=".your-text-container p"`, which targets all `<p>` tags located within elements that have the class `your-text-container`.
 
     This minimal configuration ensures AdaptEase seamlessly integrates into your existing web ecosystem without requiring extensive modifications to your page's structure or styles.
 
