@@ -9,7 +9,7 @@ This **lightweight, scalable solution** integrates with just **one line of code*
 
 AdaptEase empowers **publishers, brands, and platforms** to offer more inclusive content, boosting **dwell time, reducing bounce rates, and strengthening ESG, SEO, and compliance** (Accessibility Act 2025).
 
-*This project was developed for the [Codemotion Digital Editorial Revolution Hackathon](https://events.codemotion.com/hackathons/digital-editorial-revolution/home).*
+*This project was developed for the [Codemotion Digital Editorial Revolution Hackathon], an **AI contest for the Publishing Industry**.(https://events.codemotion.com/hackathons/digital-editorial-revolution/home).*
 
 ---
 
