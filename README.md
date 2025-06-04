@@ -49,7 +49,9 @@ Experience AdaptEase firsthand through these visual examples of the widget's int
 
 This image displays the primary AdaptEase menu when it is open, showcasing the available accessibility features.
 
-<img src="images/main.png" alt="Main Widget Screen" width="80%">
+<div align="center">
+<img src="images/main.png" alt="Main Widget Screen" width="60%">
+</div>
 
 ### Feature Buttons Highlighted
 
@@ -63,8 +65,9 @@ Each image below shows one of AdaptEase's powerful features being activated, wit
 
 AdaptEase provides robust multilingual support, allowing users to switch between languages effortlessly. Click the language button in the top right to reveal the dropdown:
 
-![Language Selection Dropdown](images/languages.png)
-
+<div align="center">
+<img src="images/languages.png" alt="Language Dropdown Widget Screen" width="60%">
+</div>
 ---
 
 ## Language Scalability & Customization
