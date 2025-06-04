@@ -1,0 +1,83 @@
+
+
+<!-- adaptease.html or your widget markup file -->
+<div id="adapteaseLoadingOverlay" class="adaptease-loading-overlay adaptease-component" style="display: none;">
+    <dotlottie-player id="adapteaseLottieAnimation" src="https://lottie.host/3abea4a2-6fa5-4c6b-8288-532ac9fbec7f/MsSXU7e9qP.lottie" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+</div>
+
+<div id="floatingCloseWidget" class="floating-close-widget adaptease-component" title="Open/Close Customization Menu">
+    <!-- Content (icon) will be set by JavaScript -->
+</div>
+
+<div id="adaptEaseWidgetMenu" class="adaptease-widget-menu adaptease-component">
+    <div class="awm-v2-header">
+        <div class="awm-v2-language-selector-row">
+            <button id="currentLanguageButton" class="awm-v2-current-language-button" aria-haspopup="true" aria-expanded="false">
+                <span id="currentFlagIcon" class="awm-flag-icon">🇮🇹</span>
+                <span id="currentLanguageText">Italiano</span>
+                <span class="awm-arrow-down">▼</span>
+            </button>
+            <div id="languageDropdown" class="awm-v2-language-dropdown" role="listbox">
+                <div class="awm-v2-language-option" data-lang="it" role="option">
+                    <span class="awm-flag-icon">🇮🇹</span> Italiano
+                </div>
+                <div class="awm-v2-language-option" data-lang="en" role="option">
+                    <span class="awm-flag-icon">🇬🇧</span> English
+                </div> 
+                <div class="awm-v2-language-option" data-lang="es" role="option">
+                    <span class="awm-flag-icon">🇪🇸</span> Español
+                </div>
+                <div class="awm-v2-language-option" data-lang="fr" role="option">
+                    <span class="awm-flag-icon">🇫🇷</span> Français
+                </div>
+                <div class="awm-v2-language-option" data-lang="de" role="option">
+                    <span class="awm-flag-icon">🇩🇪</span> Deutsch
+                </div>
+                
+                <!-- Add more language options here if needed -->
+                
+            </div>
+        </div>
+        <div class="awm-v2-header-title-row">
+            <div id="headerTitle" class="awm-v2-header-title">CUSTOMIZE YOUR READING</div>
+        </div>
+    </div>
+
+    <div class="awm-v2-main-controls">
+        <button id="buttonTextInBlocks" class="awm-v2-control-button">
+            <span class="awm-v2-button-icon" id="iconTextInBlocksContainer"></span>
+            <div class="awm-v2-button-label-wrapper">
+                <span class="awm-v2-label-default" id="labelTextInBlocks"></span>
+                <span class="awm-v2-label-hover" id="labelTextInBlocksHover"></span>
+            </div>
+        </button>
+
+        <button id="buttonSimplifiedText" class="awm-v2-control-button">
+            <span class="awm-v2-button-icon" id="iconSimplifiedTextContainer"></span>
+            <div class="awm-v2-button-label-wrapper">
+                <span class="awm-v2-label-default" id="labelSimplifiedText"></span>
+                <span class="awm-v2-label-hover" id="labelSimplifiedTextHover"></span>
+            </div>
+        </button>
+
+        <button id="buttonReadableFont" class="awm-v2-control-button">
+            <span class="awm-v2-button-icon" id="iconReadableFontContainer"></span>
+            <div class="awm-v2-button-label-wrapper">
+                <span class="awm-v2-label-default" id="labelReadableFont"></span>
+                <span class="awm-v2-label-hover" id="labelReadableFontHover"></span>
+            </div>
+        </button>
+
+        <button id="buttonSoftColors" class="awm-v2-control-button">
+            <span class="awm-v2-button-icon" id="iconSoftColorsContainer"></span>
+            <div class="awm-v2-button-label-wrapper">
+                <span class="awm-v2-label-default" id="labelSoftColors"></span>
+                <span class="awm-v2-label-hover" id="labelSoftColorsHover"></span>
+            </div>
+        </button>
+    </div>
+
+    <div class="awm-v2-footer">
+        <span id="footerText"></span>
+    </div>
+</div>

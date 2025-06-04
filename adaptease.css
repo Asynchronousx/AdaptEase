@@ -1,0 +1,495 @@
+/* adaptease.css or widget-styles.css */
+/* Self-hosted Lexend Font Definitions */
+
+@font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 100; /* Thin */
+    font-display: swap;
+    src: local('Lexend Thin'), local('Lexend-Thin'),
+         url('./assets/fonts/lexend/Lexend-Thin.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 200; /* ExtraLight */
+    font-display: swap;
+    src: local('Lexend ExtraLight'), local('Lexend-ExtraLight'),
+         url('./assets/fonts/lexend/Lexend-ExtraLight.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300; /* Light */
+    font-display: swap;
+    src: local('Lexend Light'), local('Lexend-Light'),
+         url('./assets/fonts/lexend/Lexend-Light.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400; /* Regular */
+    font-display: swap;
+    src: local('Lexend Regular'), local('Lexend-Regular'),
+         url('./assets/fonts/lexend/Lexend-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500; /* Medium */
+    font-display: swap;
+    src: local('Lexend Medium'), local('Lexend-Medium'),
+         url('./assets/fonts/lexend/Lexend-Medium.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600; /* SemiBold */
+    font-display: swap;
+    src: local('Lexend SemiBold'), local('Lexend-SemiBold'),
+         url('./assets/fonts/lexend/Lexend-SemiBold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700; /* Bold */
+    font-display: swap;
+    src: local('Lexend Bold'), local('Lexend-Bold'),
+         url('./assets/fonts/lexend/Lexend-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 800; /* ExtraBold */
+    font-display: swap;
+    src: local('Lexend ExtraBold'), local('Lexend-ExtraBold'),
+         url('./assets/fonts/lexend/Lexend-ExtraBold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 900; /* Black */
+    font-display: swap;
+    src: local('Lexend Black'), local('Lexend-Black'),
+         url('./assets/fonts/lexend/Lexend-Black.ttf') format('truetype');
+  }
+
+
+/* Base styling for the main Adaptease component container */
+.adaptease-component {
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+/* Ensures all elements within the adaptease-component inherit box-sizing */
+.adaptease-component *, .adaptease-component *::before, .adaptease-component *::after {
+    box-sizing: inherit;
+}
+
+/* Styles for the floating action button (FAB) that closes/opens the widget */
+.floating-close-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(to left, #022FC0, #2DBBF4);
+    color: white; /* This will be currentColor for the SVG icon inside */
+    border-radius: 50%;
+    display: flex; /* For centering the SVG */
+    justify-content: center;
+    align-items: center;
+    /* font-size: 28px; /* Remove or comment out if not using text characters */
+    /* font-weight: bold; /* Remove or comment out if not using text characters */
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+    z-index: 100000;
+    padding: 5px; /* Add some padding so icon doesn't touch edges */
+}
+/* Hover effect for the floating close widget */
+.floating-close-widget:hover {
+    transform: scale(1.05);
+}
+/* Styles for SVG icons within the floating close widget */
+.floating-close-widget svg.awm-fab-icon { /* Style for SVGs inside the FAB */
+    width: 70%; /* Adjust percentage to size the icon within the button */
+    height: 70%; /* Adjust percentage to size the icon within the button */
+    /* fill: currentColor; /* Should be set in the SVG string itself */
+}
+
+
+/* Styles for the main Adaptease widget menu container */
+.adaptease-widget-menu {
+    display: none;
+    position: fixed;
+    bottom: calc(30px + 55px + 10px);
+    right: 30px;
+    width: 520px;
+    max-width: calc(100vw - 60px);
+    background-color: #EFF1F5;
+    border-radius: 12px;
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.2);
+    z-index: 99999;
+    overflow: visible;
+    color: #333;
+}
+
+/* Styles for the header section of the widget menu */
+.awm-v2-header {
+    background: linear-gradient(to right, #022FC0, #2DBBF4);
+    color: white;
+    padding: 10px 20px 15px 20px;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Styles for the language selector row in the header */
+.awm-v2-language-selector-row {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    position: relative;
+}
+/* Styles for the button displaying the current language */
+.awm-v2-current-language-button {
+    font-size: 0.85em; font-weight: 400; display: inline-flex; align-items: center;
+    background-color: rgba(255,255,255,0.2); padding: 6px 12px; border-radius: 15px;
+    cursor: pointer; border: none; color: white;
+    transition: background-color 0.2s;
+}
+/* Hover effect for the current language button */
+.awm-v2-current-language-button:hover { background-color: rgba(255,255,255,0.35); }
+/* Styles for the flag icon within the current language button */
+.awm-v2-current-language-button .awm-flag-icon { margin-right: 6px; font-size: 1em; }
+/* Styles for the arrow down icon within the current language button */
+.awm-v2-current-language-button .awm-arrow-down { margin-left: 8px; font-size: 0.7em; transition: transform 0.2s ease-in-out; }
+/* Rotation for the arrow down icon when the language dropdown is open */
+.awm-v2-current-language-button.open .awm-arrow-down { transform: rotate(180deg); }
+
+/* Styles for the language dropdown menu */
+.awm-v2-language-dropdown {
+    display: none; position: absolute; top: 100%; right: 0;
+    background-color: white; border: 1px solid #ddd; border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); z-index: 10; min-width: 150px;
+}
+/* Styles for individual language options in the dropdown */
+.awm-v2-language-option {
+    padding: 8px 12px; font-size: 0.85em; color: #333; cursor: pointer;
+    display: flex; align-items: center;
+}
+/* Hover effect for language options */
+.awm-v2-language-option:hover { background-color: #f0f0f0; }
+/* Styles for flag icons within language options */
+.awm-v2-language-option .awm-flag-icon { margin-right: 8px; }
+
+/* Container for the header title */
+.awm-v2-header-title-row {}
+/* Styles for the main title in the widget header */
+.awm-v2-header-title {
+    font-size: 1.35em; font-weight: 600; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis; padding: 0 5px;
+}
+
+/* Styles for the main control grid section of the widget menu */
+.awm-v2-main-controls {
+    padding: 20px; display: grid; grid-template-columns: 1fr 1fr;
+    gap: 15px; background-color: #EFF1F5;
+}
+
+/* === BUTTON SECTION START === */
+/* Base styles for control buttons within the widget */
+.awm-v2-control-button {
+    background-color: #FFFFFF;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 9px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease, transform 0.1s ease, color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 76px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    color: #343a40;
+    overflow: hidden;
+    position: relative;
+    gap: 4px;
+}
+
+/* Container for the button icon */
+.awm-v2-control-button .awm-v2-button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 30px;
+    color: inherit;
+}
+
+/* Styles for SVG icons within control buttons */
+.awm-v2-control-button .awm-v2-button-icon svg.awm-svg-icon {
+    opacity: 1;
+    transform: translateY(0);
+    /* SVG color will be inherited via 'currentColor' set on SVG paths */
+}
+
+/* Wrapper for button labels to handle hover transitions */
+.awm-v2-button-label-wrapper {
+    position: relative;
+    width: 100%;
+    height: 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Base styles for default and hover button labels */
+.awm-v2-label-default,
+.awm-v2-label-hover {
+    display: block;
+    position: absolute;
+    width: calc(100% - 10px);
+    left: 5px;
+    font-size: 0.85em;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Styles for the default (visible) button label */
+.awm-v2-label-default {
+    opacity: 1;
+    transform: translateY(0);
+    color: inherit;
+}
+
+/* Styles for the hover (hidden by default) button label */
+.awm-v2-label-hover {
+    opacity: 0;
+    transform: translateY(1.5em);
+    color: #FFFFFF;
+}
+
+/* Hover effects for control buttons */
+.awm-v2-control-button:hover {
+    background-color: #1366D4;
+    border-color: #1366D4;
+    color: #FFFFFF; /* SVG and default label text become white */
+}
+
+/* Icon visibility on button hover */
+.awm-v2-control-button:hover .awm-v2-button-icon svg.awm-svg-icon {
+    opacity: 1; /* Keep it visible */
+    transform: translateY(0); /* Keep it in its original position */
+}
+
+/* Default label transition on button hover */
+.awm-v2-control-button:hover .awm-v2-label-default {
+    opacity: 0;
+    transform: translateY(-1.5em);
+}
+/* Hover label transition on button hover */
+.awm-v2-control-button:hover .awm-v2-label-hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Active (click) state for control buttons */
+.awm-v2-control-button:active {
+    transform: scale(0.97);
+}
+
+/* Styles for an active/selected control button */
+.awm-v2-control-button.active {
+    background-color: #FFFFFF;
+    border: 2px solid #022FC0;
+    color: #022FC0;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* Icon visibility for active control buttons */
+.awm-v2-control-button.active .awm-v2-button-icon svg.awm-svg-icon {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover effects for active control buttons */
+.awm-v2-control-button.active:hover {
+    background-color: #1366D4;
+    border-color: #022FC0;
+    color: #FFFFFF;
+}
+
+/* Icon visibility on hover for active control buttons */
+.awm-v2-control-button.active:hover .awm-v2-button-icon svg.awm-svg-icon {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Default label transition on hover for active control buttons */
+.awm-v2-control-button.active:hover .awm-v2-label-default {
+    opacity: 0;
+    transform: translateY(-1.5em);
+}
+/* Hover label transition on hover for active control buttons */
+.awm-v2-control-button.active:hover .awm-v2-label-hover {
+    opacity: 1;
+    transform: translateY(0);
+    color: #FFFFFF;
+}
+/* === BUTTON SECTION END === */
+
+
+/* Styles for the footer section of the widget menu */
+.awm-v2-footer {
+    background: linear-gradient(to right, #022FC0, #2DBBF4);
+    color: white; padding: 12px 20px; text-align: center;
+    font-size: 0.9em; font-weight: 400; border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px; white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+}
+/* Styles for the text content within the footer */
+.awm-v2-footer span#footerText {
+    display: flex; /* Use flex to align text and icon nicely */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling for the SVG logo placeholder in the footer */
+.awm-footer-icon-placeholder svg.awm-footer-svg-logo {
+    display: inline-block; /* Behaves like text but allows width/height */
+    width: 1.1em;  /* Size relative to footer font-size */
+    height: 1.1em; /* Size relative to footer font-size */
+    vertical-align: -0.125em; /* Fine-tune vertical alignment with text */
+    margin: 0 0.2em; /* Space around the icon */
+    /* fill: currentColor; /* Should be set in SVG, will inherit 'white' from footer */
+}
+
+/* NEW: Style for when soft colors mode is active */
+/* Applies a transition to the entire HTML document for filter changes */
+html {
+    transition: filter 0.3s ease-in-out; /* Apply transition to the filter property on the html element */
+}
+
+/* Reduces saturation of the entire page when the soft colors mode is active */
+html.adaptease-soft-colors-active {
+    filter: saturate(50%); /* Reduce saturation when active. Adjust as needed (e.g., 0.7 for 70%) */
+    /* The transition is now on the html element itself, so it's not needed here exclusively */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    /* Adjusts widget menu width for smaller screens */
+    .adaptease-widget-menu {
+        width: calc(100vw - 40px);
+        right: 20px;
+    }
+    /* Changes main controls to a single column layout on smaller screens */
+    .awm-v2-main-controls {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 10px;
+    }
+    /* Adjusts header title font size for smaller screens */
+    .awm-v2-header-title {
+        font-size: 1.2em;
+    }
+    /* Adjusts control button minimum height for smaller screens */
+    .awm-v2-control-button {
+        min-height: 70px;
+    }
+    /* Adjusts button icon height for smaller screens */
+    .awm-v2-control-button .awm-v2-button-icon {
+        height: 28px;
+    }
+}
+
+/* Styles for an active button within the adaptease-widget (general button active state) */
+.adaptease-widget button.active {
+    background-color: #e0e0e0; /* Slightly darker to indicate active state */
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Styles for buttons that are unavailable or disabled */
+.adaptease-button-unavailable {
+    opacity: 0.6; /* Or any other styling you prefer for a "greyed out" look */
+    cursor: not-allowed !important;
+}
+
+/* Keyframe animation for a temporary "bump" feedback effect */
+@keyframes adaptease-bump-feedback-animation {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+  }
+  
+/* Applies the bump feedback animation to an element */
+.adaptease-button-bump-feedback {
+    animation: adaptease-bump-feedback-animation 0.3s ease-in-out 1; /* Play once */
+  }
+
+/* Styles for a full-screen loading overlay */
+.adaptease-loading-overlay {
+    position: fixed; /* Cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    display: flex; /* Used to center the Lottie player */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's on top of page content */
+    /* display: none; is initially set inline and controlled by JS */
+}
+
+/* Ensure the main widget components are above the loading overlay */
+/* You might need to adjust these if you have existing position/z-index styles */
+/* Z-index for the floating close widget to be above the loading overlay */
+#floatingCloseWidget {
+    /* Assuming it's position: fixed or absolute */
+    z-index: 1002; /* Higher than overlay */
+}
+
+/* Z-index for the main widget menu to be above the loading overlay */
+#adaptEaseWidgetMenu {
+    /* Assuming it's position: fixed or absolute */
+    z-index: 1001; /* Higher than overlay */
+}
+
+/* Apply Lexend to your widget elements */
+/* Example: */
+/* Applies the Lexend font to various widget elements */
+#adaptEaseWidgetMenu,
+#adaptEaseWidgetMenu button,
+#adaptEaseWidgetMenu .awm-v2-language-text,
+#adaptEaseWidgetMenu .awm-v2-hover-text,
+
+/* Add other selectors for your widget that need Lexend */
+.awm-v2-label, 
+.awm-v2-header-title, 
+.awm-v2-footer-text {
+    font-family: 'Lexend', Arial, sans-serif; /* Use 'Lexend' and provide fallbacks */
+}
+
+/* --- Readable Font CSS --- */
