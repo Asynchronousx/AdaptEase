@@ -66,7 +66,6 @@ AdaptEase provides robust multilingual support, allowing users to switch between
 <div align="center">
 <img src="images/languages.png" alt="Language Dropdown Widget Screen" width="60%">
 </div>
----
 
 ## Language Scalability & Customization
 
