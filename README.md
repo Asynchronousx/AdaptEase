@@ -5,8 +5,6 @@
 
 AdaptEase is an **AI-powered widget** designed to create a truly **inclusive reading experience** online. Primarily developed for **neurodivergent individuals** (dyslexia, ADHD, autism) but beneficial for all, it enables **real-time customization** of digital content for enhanced **clarity, readability, and accessibility**.
 
-It features four key cognitive functions: **text chunking, linguistic simplification, a dyslexic font with increased spacing, and visual stimulation reduction (soft colors)**. AdaptEase seamlessly enhances reading on any website, supporting **multiple languages** without altering original content structure.
-
 This **lightweight, scalable solution** integrates with just **one line of code**. Its frontend directly manipulates the DOM, while the **Flask-based backend** leverages **optimized open-source LLMs (Qwen)** for fast, cached, **multilingual inference**. All features are grounded in **scientific evidence** and **W3C cognitive accessibility standards**, ensuring real impact.
 
 AdaptEase empowers **publishers, brands, and platforms** to offer more inclusive content, boosting **dwell time, reducing bounce rates, and strengthening ESG, SEO, and compliance** (Accessibility Act 2025).
