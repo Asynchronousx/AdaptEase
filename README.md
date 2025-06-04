@@ -1,8 +1,11 @@
 # AdaptEase: Revolutionizing Web Accessibility
 
 ![AdaptEase Logo](images/logo.png)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 AdaptEase is an **AI-powered widget** designed to create a truly **inclusive reading experience** online. Primarily developed for **neurodivergent individuals** (dyslexia, ADHD, autism) but beneficial for all, it enables **real-time customization** of digital content for enhanced **clarity, readability, and accessibility**.
+
+It features four key cognitive functions: **text chunking, linguistic simplification, a dyslexic font with increased spacing, and visual stimulation reduction (soft colors)**. AdaptEase seamlessly enhances reading on any website, supporting **multiple languages** without altering original content structure.
 
 This **lightweight, scalable solution** integrates with just **one line of code**. Its frontend directly manipulates the DOM, while the **Flask-based backend** leverages **optimized open-source LLMs (Qwen)** for fast, cached, **multilingual inference**. All features are grounded in **scientific evidence** and **W3C cognitive accessibility standards**, ensuring real impact.
 
@@ -46,7 +49,7 @@ Experience AdaptEase firsthand through these visual examples of the widget's int
 
 This image displays the primary AdaptEase menu when it is open, showcasing the available accessibility features.
 
-![Main Widget Screen](images/main.png)
+<img src="images/main.png" alt="Main Widget Screen" width="80%">
 
 ### Feature Buttons Highlighted
 
@@ -246,4 +249,4 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ## Contact
 
-For questions, support, or collaboration opportunities, please open an issue on GitHub or reach out to us directly via [your-email@example.com]. We look forward to hearing from you! 
+For questions, support, or collaboration opportunities, please open an issue on GitHub or reach out to us directly via [your-email@example.com]. We look forward to hearing from you!
