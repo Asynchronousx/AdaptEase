@@ -102,12 +102,12 @@ The widget handles its own HTML and CSS injection, requiring minimal setup on yo
         - type="module": Important for modern JavaScript, allows import/export.
         - defer: Ensures the script executes after the HTML is parsed but before DOMContentLoaded.
         - data-adaptease-text-class: Specifies the CSS selector for the text elements
-                                        the widget should target.
+          the widget should target.
     -->
     <script src="adaptease.js" 
             type="module" 
             defer
-            data-adaptease-text-class=".foc-module-text p">
+            data-adaptease-text-class=".your-text-container p">
     </script>
     ```
 
