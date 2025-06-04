@@ -89,7 +89,7 @@ By following these steps, you can significantly expand AdaptEase's linguistic ca
 
 ## How to Use AdaptEase
 
-Integrating AdaptEase into your existing HTML page is incredibly simple, embodying our slogan: **AdaptEase: It's EASY TO ADAPT!**
+Integrating AdaptEase into your existing HTML page is incredibly simple. Indeed, **AdaptEase: It's EASY TO ADAPT!**
 
 The widget handles its own HTML and CSS injection, requiring minimal setup on your part. The most crucial step is to tell AdaptEase which elements on your page contain the text it needs to process or modify.
 
