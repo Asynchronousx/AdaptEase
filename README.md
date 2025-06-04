@@ -1,8 +1,6 @@
 # AdaptEase: Revolutionizing Web Accessibility
 
-<div align="center">
-<img src="images/logo.png" alt="Logo" width="80%">
-</div>
+![AdaptEase Logo](images/logo.png)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 AdaptEase is an **AI-powered widget** designed to create a truly **inclusive reading experience** online. Primarily developed for **neurodivergent individuals** (dyslexia, ADHD, autism) but beneficial for all, it enables **real-time customization** of digital content for enhanced **clarity, readability, and accessibility**.
