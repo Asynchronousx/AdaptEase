@@ -201,28 +201,18 @@ To run AdaptEase locally and contribute to its development, follow these steps:
     *   Include the `adaptease.js` script tag in your HTML file as demonstrated in the "How to Use AdaptEase" section, remembering to adjust the `data-adaptease-text-class` attribute to match your target text elements.
 
 ---
-
 ## Future Enhancements & Roadmap
 
-We are continuously working to improve AdaptEase, adding more features and refining existing ones. Here are some areas for future development:
+Technically, AdaptEase is both horizontally and vertically scalable, supporting traffic peaks and easily expanding into any language.
 
-*   **Expanded Accessibility Features:**
-    *   **Text-to-Speech Integration:** Implement a feature to read out content, enhancing auditory accessibility.
-    *   **Customizable Highlighting:** Allow users to highlight specific parts of text or apply reading guides.
-    *   **Adjustable Line Height & Letter Spacing:** Provide granular control over text layout for personalized comfort.
-*   **Broader Language Support:**
-    *   **More Languages:** Extend the LLM prompts and UI translations to support a wider array of global languages.
-    *   **Automated Language Detection:** Implement automatic detection of page content language for seamless feature application.
-*   **Advanced LLM Capabilities:**
-    *   **Model Fine-tuning:** Further fine-tune the LLM for even more nuanced and context-aware text chunking and simplification.
-    *   **Simplification Levels:** Offer adjustable simplification levels (e.g., beginner, intermediate, advanced) to cater to diverse needs.
-*   **Enhanced Performance & Caching:**
-    *   **Persistent Caching:** Implement local storage caching for processed content to minimize API calls and improve load times across sessions.
-*   **User Interface/User Experience (UI/UX) Improvements:**
-    *   **Theming Options:** Introduce more customizable UI themes for the widget itself.
-    *   **Comprehensive Accessibility Audit:** Conduct a thorough audit of the widget's UI to ensure it meets WCAG standards.
-*   **Deployment & Scalability:**
-    *   Provide detailed guides for deploying the Python backend to various cloud platforms (e.g., AWS, Google Cloud, Azure, Heroku) for production environments.
+In our roadmap:
+– **Micro-quizzes** to test comprehension
+– **Text-to-image generation**
+– **Content analytics** for publishers and brands.
+
+Commercially:
+– **WordPress** plugin
+– **White-label API** for media and educational platforms.
 
 ---
 
