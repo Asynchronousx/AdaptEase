@@ -206,13 +206,13 @@ To run AdaptEase locally and contribute to its development, follow these steps:
 Technically, AdaptEase is both horizontally and vertically scalable, supporting traffic peaks and easily expanding into any language.
 
 In our roadmap:
-– **Micro-quizzes** to test comprehension
-– **Text-to-image generation**
-– **Content analytics** for publishers and brands.
+* **Micro-quizzes** to test comprehension
+* **Text-to-image generation**
+* **Content analytics** for publishers and brands.
 
 Commercially:
-– **WordPress** plugin
-– **White-label API** for media and educational platforms.
+* **WordPress** plugin
+* **White-label API** for media and educational platforms.
 
 ---
 
