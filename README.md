@@ -135,7 +135,6 @@ The AdaptEase project is organized into logical components to ensure modularity 
     *   `assets/prompts/`: Contains JSON files (`chunk_prompts.json`, `simplify_prompts.json`) with carefully crafted prompts for the Language Model, supporting multiple languages.
     *   `assets/fonts/opendyslexic/`: Stores the OpenDyslexic font files used by the "Readable Font" feature.
     *   `assets/adaptease_translations.json`: A JSON file containing all UI text translations for the widget in various languages.
-    *   `assets/images/`: (New) Suggested directory for screenshots and other image assets used in the README.
 
 ---
 
